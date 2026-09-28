@@ -1,0 +1,28 @@
+site_name: Cuadratura Gaussiana
+site_description: Documentación del módulo cuadrature.py
+theme:
+  name: material
+  language: es
+
+nav:
+  - Introducción: index.md
+  - Explicación: explanation.md
+  - Tutorial: tutorials.md
+  - Referencia: reference.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: false
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
